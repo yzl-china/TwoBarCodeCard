@@ -35,6 +35,7 @@ namespace TwoBarCodeCard
             //调用二维码生成类的方法生成图片
             this.pbCode.Image = createQRCode.CreatCodeImage(data,
                 this.pbCode.Width, this.pbCode.Height);
+            this.pbCode.Image.Save(tbName.Text+"QRimage.jpg");
         }
     }
 }
